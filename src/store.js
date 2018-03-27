@@ -7,4 +7,4 @@ const initialState = {
   }
 };
 
-export default createStore(createCirquitReducer(initialState));
+export default createStore(createCirquitReducer(initialState), initialState);
