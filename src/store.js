@@ -1,0 +1,10 @@
+import { createStore } from "redux";
+import { createCirquitReducer } from "redux-cirquit";
+
+const initialState = {
+  counter: {
+    count: 0
+  }
+};
+
+export default createStore(createCirquitReducer(initialState));
