@@ -1,14 +1,12 @@
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { createCirquitReducer } from "redux-cirquit";
 
-const initialState = {
-  counter: {
-    count: 0
-  }
-};
+const reducers = combineReducers({
+  counter: createCirquitReducer({ count: 0 }, { namespace: "counter" }),
+  user: createCirquitReducer({ name: "anonymous" }, { namespace: "user" })
+});
 
 export default createStore(
-  createCirquitReducer(initialState),
-  initialState,
+  reducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
