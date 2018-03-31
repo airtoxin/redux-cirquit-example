@@ -7,4 +7,8 @@ const initialState = {
   }
 };
 
-export default createStore(createCirquitReducer(initialState), initialState);
+export default createStore(
+  createCirquitReducer(initialState),
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
