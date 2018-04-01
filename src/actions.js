@@ -3,14 +3,14 @@ import { createCirquitAction } from "redux-cirquit";
 export const increment = amount => createCirquitAction(state => ({
   ...state,
   count: state.count + amount
-}), { name: "increment", namespace: "counter" });
+}), { namespace: "counter", meta: { reducerName: "increment", amount } });
 
 export const reset = () => createCirquitAction(state => ({
   ...state,
   count: 0
-}), { name: "reset", namespace: "counter" });
+}), { namespace: "counter", meta: { reducerName: "reset" } });
 
 export const setUserName = name => createCirquitAction(state => ({
   ...state,
   name,
-}), { name: "setUserName", namespace: "user" });
+}), { namespace: "user", meta: { reducerName: "setUserName", name } });
