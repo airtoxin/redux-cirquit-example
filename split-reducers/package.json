@@ -1,11 +1,11 @@
 {
-  "name": "redux-cirquit-example",
+  "name": "redux-cirquit-example_split-reducers",
   "version": "0.0.1",
   "description": "Example project using redux-cirquit",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode produxtion"
+    "build": "webpack --mode production"
   },
   "license": "MIT",
   "dependencies": {
