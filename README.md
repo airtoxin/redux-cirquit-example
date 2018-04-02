@@ -2,8 +2,14 @@
 
 Example project using redux-cirquit
 
-## Run
+## [single-object-state](/single-object-state)
 
-build: `$ npm start`
+Simple example.
+The state was managed by singe big object.
 
-and then, open dist/index.html
+## [split-reducers](/split-reducers)
+
+Example for realworld.
+The state was consisting of many sub-reducers.
+Reducers combined by redux's `combineReducers` function.
+
