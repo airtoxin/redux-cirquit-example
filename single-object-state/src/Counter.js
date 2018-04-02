@@ -4,7 +4,6 @@ import * as actions from "./actions";
 
 const CounterComponent = ({ count, handleClickIncrement, handleClickReset }) => (
   <div style={{ border: "solid 1px" }}>
-    <h1>Namespace: Counter</h1>
     <h2>count: {count}</h2>
     <button onClick={() => handleClickIncrement(1)}>increment 1</button>
     <button onClick={() => handleClickIncrement(10)}>increment 10</button>

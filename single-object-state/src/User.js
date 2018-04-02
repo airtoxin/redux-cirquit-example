@@ -13,7 +13,6 @@ class UserComponent extends React.Component {
   render() {
     return (
       <div style={{ border: "solid 1px" }}>
-        <h1>Namespace: user</h1>
         <h2>User name: {this.props.name}</h2>
         <input type="text" value={this.state.nameInput} onChange={event => this.handleChangeInput(event)}/>
         <button onClick={() => this.handleClickButton()}>Set user name</button>
