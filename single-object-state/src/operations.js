@@ -1,6 +1,6 @@
-import { createCirquitAction } from "redux-cirquit";
+import { createOperation } from "redux-cirquit";
 
-export const increment = amount => createCirquitAction(state => ({
+export const increment = amount => createOperation(state => ({
   ...state,
   counter: {
     ...state.counter,
@@ -8,7 +8,7 @@ export const increment = amount => createCirquitAction(state => ({
   }
 }), { meta: { reducerName: "increment", amount } });
 
-export const reset = () => createCirquitAction(state => ({
+export const reset = () => createOperation(state => ({
   ...state,
   counter: {
     ...state.counter,
@@ -16,7 +16,7 @@ export const reset = () => createCirquitAction(state => ({
   }
 }), { meta: { reducerName: "reset" } });
 
-export const setUserName = name => createCirquitAction(state => ({
+export const setUserName = name => createOperation(state => ({
   ...state,
   user: {
     ...state.user,
