@@ -4498,9 +4498,9 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-redux-cirquit@^2.0.0-0:
-  version "2.0.0-0"
-  resolved "https://registry.yarnpkg.com/redux-cirquit/-/redux-cirquit-2.0.0-0.tgz#da1649f42aee0510399a2dcfb86f8737d3d09f86"
+redux-cirquit@^2.0.0-4:
+  version "2.0.0-4"
+  resolved "https://registry.yarnpkg.com/redux-cirquit/-/redux-cirquit-2.0.0-4.tgz#3d1c4b11ba4ac31477e468e3aec1f6036d1b251e"
 
 redux@^3.6.0, redux@^3.7.2:
   version "3.7.2"
