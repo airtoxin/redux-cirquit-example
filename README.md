@@ -14,4 +14,9 @@ The state was consisting of many sub-reducers.
 Reducers combined by redux's `combineReducers` function.
 
 Big difference of single-object-state example is `namespace` option.
-Both of `createCirquitReducer` and `createCirquitAction` are invoked with `namespace` option.
+Both of `createCirquitReducer` and `createOperation` are invoked with `namespace` option.
+
+
+## [typescript](/typescript)
+
+TypeScript example.
